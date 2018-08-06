@@ -8,7 +8,7 @@ import javax.persistence.Id;
 
 import javax.persistence.ManyToOne;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import net.minidev.json.annotate.JsonIgnore;
 
 
 @Entity
