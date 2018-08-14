@@ -16,6 +16,7 @@ public class Module {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
+	
 	public List<Lesson> getLessons() {
 		return lessons;
 	}

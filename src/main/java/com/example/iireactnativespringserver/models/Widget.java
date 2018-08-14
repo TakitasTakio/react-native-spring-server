@@ -17,6 +17,21 @@ public class Widget {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
+	
+	
+	
+	public String getText() {
+		return text;
+	}
+	public void setText(String text) {
+		this.text = text;
+	}
+	public String getLink() {
+		return link;
+	}
+	public void setLink(String link) {
+		this.link = link;
+	}
 	public int getId() {
 		return id;
 	}
@@ -30,8 +45,16 @@ public class Widget {
 		this.title = title;
 	}
 	private String title;
+	private String text;
+	private String link;
 	@ManyToOne
 	@JsonIgnore
 	private Lesson lesson;
+
+
+
+
+	
+	
 
 }
